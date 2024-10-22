@@ -15,6 +15,8 @@ const messages = [
 
 const indexRouter = Router();
 
+indexRouter.get("/new", (req, res) => res.render("user-form"));
+indexRouter.post("/new", (req, res) => res.send("Message submitted"));
 indexRouter.get("/", (req, res) =>
   res.render("index", { title: "Mini Message Board", messages: messages })
 );
