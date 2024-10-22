@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mini Message Board</title>
+    <title><%= title %></title>
   </head>
-  <body></body>
+  <body>
+    <ul>
+      <% messages.map((message) => { %>
+        <li><%= message.user + ": " + message.text + " at " + message.added%></li>
+      <% }) %>
+    </ul>
+  </body>
 </html>
