@@ -9,3 +9,19 @@
 .username {
   font-weight: bold;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 500px;
+}
+
+textarea {
+  height: 100px;
+  max-width: 100%;
+}
+
+button {
+  border-radius: 6px;
+}
